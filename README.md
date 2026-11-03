@@ -13,6 +13,10 @@
 
 The source includes inspection, SOP, statement-history, account and subscription screens. A generated draft is not a certified inspection finding or a substitute for professional review.
 
+## How I build with AI
+
+**All of my development work presented here was done with AI assistance.** I use AI throughout implementation, debugging and validation. I understand programming and software engineering fundamentals, and use them to define requirements, guide the tools, review changes and check how the software actually behaves. I take responsibility for technical decisions and results.
+
 ## My work and technical scope
 
 This project is part of my application-development portfolio. The reviewed client code combines React Native and Expo screens, image capture, voice-input state, an editable description-review step, authentication and calls to a separate backend. This case presents that client workflow and integration work; it does not claim that I authored every library, all backend behavior, or every inherited file.
