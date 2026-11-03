@@ -1,19 +1,15 @@
-# Engineering walkthrough
+# Spediak client engineering
 
-## Human review between model steps
+## Input and generation
 
-The inspected client separates the image/context input, preliminary description and final statement request. It exposes an editable preliminary description before the next request. That review boundary matters: an image interpretation should not silently become an asserted final finding.
+The current main action sends the photo and notes directly to the statement-generation API. Audio transcription appends text to the notes before generation. The user can review and edit the resulting statement.
 
-## Multiple interaction states
+## Distinct outcomes
 
-Image selection, microphone permission, recording, transcription, upload and generation have different outcomes. The client tracks these states and user-visible errors rather than treating them as a single button response. UI state alone does not prove that retries, persistence or backend recovery are correct.
+Media selection, recording, transcription, upload and generation have separate state. Saving the generated result is a separate API operation: a draft can be visible even if saving fails. A generated statement therefore does not establish a persisted history entry.
 
-## Mobile and web boundaries
+## Mobile and web
 
-React Native and Expo provide shared interface code while platform checks, media permissions and file handling remain explicit concerns. The repository also contains SOP and statement-history routes, authentication dependencies and subscription integration. Dependency presence is not proof of successful payment processing or a completed store release.
+React Native and Expo share interface code while file handling, microphone permissions and recording differ by platform. Clerk supplies client authentication. Backend authorization, live generation and store distribution require their own runtime checks.
 
-## What I can discuss
-
-The observation-to-draft flow, review before generation, media permissions, state management and integration boundaries. Runtime correctness, accessibility and backend authorization require checks beyond this source review.
-
-[Back to the case](README.md)
+[Case overview](README.md)

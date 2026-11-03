@@ -1,32 +1,24 @@
-# Spediak · Inspection writing workflow
+# Spediak
 
-**A mobile and web application for turning inspection observations into reviewable draft statements.**
+**A mobile/web inspection client for turning photos and notes into editable draft statements.**
 
-[Engineering notes](ENGINEERING.md) · [Juan Rios](https://github.com/excelenciaempire)
+[Engineering](ENGINEERING.md) · [Contact](https://github.com/excelenciaempire/riverz-showcase/issues/new?title=Professional%20inquiry)
 
-## Workflow represented in the application
+## The client workflow
 
-1. Capture or select an inspection image and add written or spoken context.
-2. Review and edit a preliminary description.
-3. Request a draft statement with the selected inspection context.
-4. Review the result and retain it in inspection history.
+1. Capture or select an inspection photo.
+2. Add written notes or transcribe spoken observations.
+3. Generate a draft statement.
+4. Review and edit the result; the client also requests that it be saved to inspection history.
 
-The source includes inspection, SOP, statement-history, account and subscription screens. A generated draft is not a certified inspection finding or a substitute for professional review.
+## My contribution
 
-## How I build with AI
+My work here is the React Native/Expo client: media input, transcription state, statement-generation requests, result editing, authentication and history integration. This case focuses on that client rather than claiming all backend behavior.
 
-**All of my development work presented here was done with AI assistance.** I use AI throughout implementation, debugging and validation. I understand programming and software engineering fundamentals, and use them to define requirements, guide the tools, review changes and check how the software actually behaves. I take responsibility for technical decisions and results.
-
-## My work and technical scope
-
-This project is part of my application-development portfolio. The reviewed client code combines React Native and Expo screens, image capture, voice-input state, an editable description-review step, authentication and calls to a separate backend. This case presents that client workflow and integration work; it does not claim that I authored every library, all backend behavior, or every inherited file.
+The current main action generates the statement directly from the photo and notes. The generated text requires professional review; it is a draft, not a certified inspection finding.
 
 **React Native · Expo · TypeScript · Clerk · Media capture · API integration**
 
-## Status and evidence
+**All my development work presented here was done with AI assistance.** I use programming and software engineering fundamentals to define requirements, review code, test behavior and take responsibility for technical decisions.
 
-This is a public case study based on repository inspection on 2026-11-03. The code contains the workflow described above and Expo build configuration. A build guide does not establish App Store approval, a currently working production backend or a completed end-to-end inspection. No live app or release was exercised for this publication.
-
-No inspection photographs, client records or operational configuration are included. This repository contains documentation, not the application source.
-
-[Professional contact](https://github.com/excelenciaempire/riverz-showcase/issues/new?title=Professional%20inquiry)
+This case is based on the client implementation. It does not establish a current store release or a verified live backend. Application source and inspection data stay private.
