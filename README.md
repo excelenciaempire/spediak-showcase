@@ -17,17 +17,12 @@ The project also has a later HTML/JavaScript client wrapped with Capacitor for w
 
 ## Inside the application
 
-### Photo and notes input
+<p>
+  <img src="assets/capacitor-analyze.png" alt="Spediak photo and notes input" width="260">
+  <img src="assets/capacitor-onboard.png" alt="Spediak consumer setup" width="260">
+</p>
 
-<img src="assets/capacitor-analyze.png" alt="Photo and notes input" width="360">
-
-Archived local web/Capacitor application capture; native English/light interface and guest/empty input state. This is the later client phase, separate from the earlier Expo client.
-
-### Consumer setup
-
-<img src="assets/capacitor-onboard.png" alt="Consumer setup" width="360">
-
-Archived local web/Capacitor application capture; native English/light interface and guest/empty input state. This is the later client phase, separate from the earlier Expo client.
+Archived native English/light captures from the later web/Capacitor client: photo/notes input and setup, both in guest/empty state. The earlier Expo client contribution is described below.
 
 [Capture provenance](SCREENSHOTS.md)
 
