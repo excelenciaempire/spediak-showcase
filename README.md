@@ -17,6 +17,8 @@ The project also has a later HTML/JavaScript client wrapped with Capacitor for w
 
 ## Inside the application
 
+[Explore the feature tour](FEATURES.md) · [Capture provenance](SCREENSHOTS.md)
+
 <p>
   <img src="assets/capacitor-analyze.png" alt="Spediak photo and notes input" width="260">
   <img src="assets/capacitor-onboard.png" alt="Spediak consumer setup" width="260">
